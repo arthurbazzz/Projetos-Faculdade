@@ -1,0 +1,83 @@
+<!-- Arthur Bazilio de Moraes e Pedro Henrique Ferreira-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximal-scale = 1.0">
+    <title>Pares e Ímpares</title>
+    <style>
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ADD9E6;
+            color: #000;
+            padding: 10px;
+            text-shadow: 1px 1px #808080;
+            font-size: 1em;
+        }
+
+        footer{
+            background-color: #ADD9E6;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: #000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>NÚMEROS ÍMPARES OU PARES DE 1 A 20</h2>
+    </header>
+
+    <script>
+        let escolha = prompt('Escolha para PARES = 0 | ÍMPARES = 1');
+        let contadorPar = 0, contadorImpar = 0;
+        if(escolha != 0 && escolha != 1){
+            alert('MENSAGEM DO PROGRAMA\nNúmero inválido. Escolha 0 (Zero) ou 1 (Um)\nO programa será encerrado');
+            close();
+        } 
+        document.open();
+        document.write('<table border =\"3\"');
+        document.write('<tr>')
+        document.write('<td>#</td>');
+
+        if (escolha == 0) {
+            alert('Você escolheu por numeros pares')
+            document.write('<td>Números Pares</td>');
+
+        } else if (escolha == 1){
+            alert('Você escolheu por numeros impares')
+            document.write('<td>Números Impares</td>');
+        } else {
+            document.close();
+        }
+
+        for (let i = 1; i <= 20; i++){
+        document.write('<tr>')
+        if (escolha == 0 ){
+            if (i % 2  == 0){
+                document.write('<td>'+(contadorPar+1)+'</td>');
+                document.write('<td>'+i+'</td>');
+                contadorPar++;
+            }
+        } else if (escolha == 1){
+            if (i % 2  != 0){
+                document.write('<td>'+(contadorImpar+1)+'</td>');
+                document.write('<td>'+i+'</td>');
+                contadorImpar++;
+            }
+        } 
+        document.write('</tr>');
+        }
+        document.write('</table>');
+        document.close();
+    </script>
+
+    <footer>
+        <p>Programa imprime impares ou pares. Usa operador de resto ou divisão %</p>
+    </footer>
+</body>
+</html>

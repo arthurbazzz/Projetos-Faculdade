@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximal-scale = 1.0">
+    <title>Região Sul</title>
+
+    <style>
+        *{
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        
+        figure{
+            text-align: center;
+        }
+
+        body{
+            background-size: cover;
+        }
+
+        header{
+            color: #fff;
+            font-family: Arial;
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .mapa {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        footer{
+            color: #fff;
+            font-family: Arial;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body background="img/projeto07back.jpg">
+    <header>
+        <p>REGIÃO SUL</p>
+    </header>
+
+    <section class="mapa">
+        <figure>
+            <img src="IMG/projeto07.png" alt="Região Sul" usemap="#mapasul">
+        </figure>
+
+        <map name="mapasul">
+            <!-- Usando Retângulo ( Seleciona o espaço de forma retangular )-->
+            <area shape="rect" coords="91,13,166,89" href="https://pt.wikipedia.org/wiki/Paran%C3%A1" alt="pr"
+                title="Informações do Paraná" target="_blank">
+
+            <!-- Usando Círculo ( Seleciona o espaço de forma circular )-->
+            <area shape="circle" coords="94,173,45" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" alt="rs"
+                title="Informações do Rio Grande do Sul" target="_blank">
+
+            <!-- Usando Polígono ( Seleciona o espaço de forma poligono )-->
+            <area shape="poly"
+                coords="82,113,83,94,134,102,154,88,193,94,191,89,196,127,168,165,162,162,169,146,144,137,123,121"
+                href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" alt="rs" title="Informações de Santa Catarina"
+                target="_blank">
+        </map>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por: </p>
+        <p>BYTA BUG LTDA</p>
+        <P>6070-6070</P>
+    </footer>
+</body>
+
+</html>

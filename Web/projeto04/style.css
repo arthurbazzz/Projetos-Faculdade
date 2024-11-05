@@ -1,0 +1,37 @@
+*{
+    border: 0px;
+    padding: 0px;
+}
+
+b{
+    color: #808080;
+}
+
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #808080;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+
+#logo {
+    background-color: #808080;
+    text-align: center;
+    margin: 0px;
+}
+
+footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+.nomeusuario {
+    text-align: left;
+    font-size: 1em;
+    color: #808080;
+    font-family: Calibri;
+}

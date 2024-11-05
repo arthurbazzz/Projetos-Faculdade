@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0">
+    <title>Rem</title>
+    <style>
+        *{
+            margin: 0px;
+            border: 0px;
+            padding: 15px;
+        }
+        body{
+            background-color: #87ceeb;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+        img {
+            width: 20%;
+            height: 20%;
+        }
+
+        figure {
+            text-align: center;
+            background-color: #808080;
+        }
+
+        h1 {
+            border: 1px solid #000;
+            background-color: #808080;
+            font-family: Arial;
+            font-size: 2.2rem;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        h2 {
+            font-family: Arial;
+            font-size: 2.0rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .unidaderen {
+            border: 1px solid #000;
+            background-color: #D3D3D3;
+            font-family: Arial;
+            font-size: 1.6rem;
+        }
+
+        footer {
+            border: 1px solid #000;
+            background-color: #808080;
+            border-style: double;
+        }
+        .rodape {
+            font-family: Arial;
+            font-size: 1.0rem;
+        }
+        .separador {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id ="topo"></section>
+    <figure>
+        <img src="img/projeto06.png" alt="">
+    </figure>
+    
+    <h1> As unidades relativas "em" e "rem"</h1>
+
+    <div class="separador"></div>
+
+    <section class = "unidaderen">
+    <h2>A unidade em</h2>
+    <p>
+        O "em" usa para o cálculo do tamanho da fonte o elemento pai, criando uma hierarquia no cálculo, para tornar
+        responsivo a visualização (aumentar ou diminuir a fonte). Quando há a redução da fonte em apps (por exemplo) pode
+        ocorrer problema de acessibilidade, ou seja, dificuldades de visualização de letras pequenas.
+    </p>
+    </section>
+    
+    <div class="separador"></div>
+
+    <section class = "unidaderen">
+    <h2>A unidade rem</h2>
+    <p>
+        Basicamente usamos "rem" para deixar mais fácil o trabalho, no caso de deixar o projeto responsivo, em outras
+        palavras, para adaptar a fonte para vários tamanhos de telas. Usando "rem" teremos sempre o tamanho da fonte
+        responsiva independente se for navegador ou um app. Por exemplo: No Browser 16 pixels, no app também 16 pixels.
+    </p>
+    </section>
+
+    <div class="separador"></div>
+
+    <section class = "unidaderen">
+    <h2>Outras Unidades</h2>
+    <p>
+        A unidade "%" ou Porcentagem, é usada para auxiliar o entendimento das dimensões (altura e largura) ou área ocupada,
+        faz a conversão responsiva. A unidade absoluta "pt" ou Ponto (1 pt é o mesmo que 1/72 de polegada). Também usado
+        para entender visualmente a altura da linha em pontos. A unidade pixel ou "px" é muito usada e corresponde a um
+        ponto na tela do computador, é usado para entender visualmente a altura da linha em pixels. Uma última unidade a
+        discutir é a unidade fração ou "fr" ela representa um fragmento do espaço disponível em um container de um grid. Uma
+        observação importante é que alguns autores consideram a unidade px (pixel) como relativa, pois o tamanho deste
+        corresponderá à resolução ou dispositivo usado. Outros autores consideram o px uma unidade absoluta, o pixel
+        significa picture element (elemento de imagem/figura), ou seja, o píxel é o menor elemento em um dispositivo de
+        exibição.
+    </p>
+    </section>
+
+    <div class="separador"></div>
+
+    <footer>
+        <p class ="rodape">HTML5</p>
+        <p class ="rodape">Disciplina WEB, HTML, CSS, E JS</p>
+        <p class ="rodape">Contato: prof@profwebhtml.com.br</p>
+        <p class ="rodape">Whatsapp: 0070-0070</p>    
+        <a class = "voltar" href="#topo" rel="nofollow"title = "Voltar para o topo da página">Voltar</a>
+    </footer>
+
+</body>
+
+</html>
